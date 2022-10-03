@@ -31,13 +31,23 @@ public class _12_method12 {
         Sonuç= false
         45, 3ün üssü (kuvveti) değildir.
      */
-
     public static void main(String[] args) {
-
-
-
+        System.out.println("Sayı girin, 3'ün katı olup olmadığını kontrol edelim :");
+        Scanner input = new Scanner (System.in);
+        int num = input.nextInt();
+        System.out.println(powerOfThree(num));
     }
+    public static boolean powerOfThree (int i) {
+        boolean result = false;
 
-
-
+        while (i>3){
+            i/=3;
+        }
+        if (i%3==0) result = true;
+        return result;
+    }
 }
+
+
+
+

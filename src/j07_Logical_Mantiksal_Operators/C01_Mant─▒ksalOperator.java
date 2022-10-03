@@ -1,6 +1,6 @@
-package j07_Logical_Mantıksal_Operators;
+package j07_Logical_Mantiksal_Operators;
 
-public class C01_MantıksalOperator {
+class C01_MantiksalOperator {
     public static void main(String[] args) {
 /*
  -------- && - and - (ve)---------
