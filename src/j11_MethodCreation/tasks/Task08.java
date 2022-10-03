@@ -17,6 +17,21 @@ public class Task08 {
     Beklenen Çıktı:
     false
     */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("yıl giriniz");
+        int yil = sc.nextInt();
+        System.out.println("girdiginiz yıl artıkYıl mı? " + artikYil(yil));
 
+
+    }
+
+    public static boolean artikYil(int yil) {
+        boolean result = false;
+        if (yil % 4 == 0 )
+            if ( yil % 100 == 0)
+               if (yil%400==0) result = true;
+                else result = false;
+            else result = true;
+        return result = false;
     }
 }

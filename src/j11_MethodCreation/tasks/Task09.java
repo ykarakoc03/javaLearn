@@ -1,5 +1,7 @@
 package j11_MethodCreation.tasks;
 
+import java.util.Scanner;
+
 public class Task09 {
 
     public static void main(String[] args) {
@@ -12,7 +14,17 @@ public class Task09 {
     Beklenen çıktı:
      7200
     */
+        Scanner sc = new Scanner(System.in);
+        System.out.println("saat giriniz");
+        int saat = sc.nextInt();
+        System.out.println("Girdiginiz saat " + saniyeCevir(saat) + " saniyedir");
 
 
     }
+
+    private static int saniyeCevir(int saat) {
+        return saat*3600;
+    }
+
+
 }
