@@ -32,6 +32,7 @@ public class Task04AtmMethod {
                 break;
             default:
                 System.out.println("agam daha seçim yapamirsen bide para istirsen");
+                secim();
         }
     }
 
