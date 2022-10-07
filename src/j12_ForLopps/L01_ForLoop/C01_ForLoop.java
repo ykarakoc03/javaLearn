@@ -1,4 +1,4 @@
-package j12_ForLopps.L01_forloop;
+package j12_ForLopps.L01_ForLoop;
 
 public class C01_ForLoop {
     //41 kere maaşallah print ediniz
