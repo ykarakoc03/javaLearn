@@ -1,4 +1,4 @@
-package j12_ForLopps.L03_DoWhileLoop;
+package j12_Lopps.L03_DoWhileLoop;
 
 public class C01_DoWhileLoop {
     public static void main(String[] args) {
