@@ -25,5 +25,11 @@ public class Task07 {
         System.out.println("en buyuk sayi :" +temp);
 
 
+
+
+
+
+
+
     }
 }
