@@ -1,7 +1,20 @@
 package j00_Exercise.Day01;
 
+import java.util.Arrays;
+
 public class Q01_task01 {
-    //Type all integers which are divisible by 4 and divisible by 6 from 120 to 11 in the same line with a space between consecutive integers
+    public static void main(String[] args) {
 
 
+   String [] strs={"A","B"};
+   int idx =0;
+        for (String s:strs) {
+            strs[idx].concat(" eleman"+idx);
+            idx++;
+            System.out.println(Arrays.toString(strs));
+        }
+        for (idx=0;idx< strs.length; idx++){
+            System.out.println(strs[idx]);
+        }
+}
 }

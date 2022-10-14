@@ -1,5 +1,9 @@
 package j15_Arrays;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class Task10 {
 
     public static void main(String[] args) {
@@ -9,6 +13,7 @@ public class Task10 {
         output :-1,-2,3,-4,5,6
 
          */
+
 
 
     }
