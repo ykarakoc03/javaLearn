@@ -22,7 +22,7 @@ public class T01_ToplamZiplamaMesafesiSay {
                  System.out.println("yüksekli 1 metrenin altında durmaktadır");
                  break;
              } else {
-                 yükseklik=yükseklik*3/4;
+                 yükseklik=yükseklik*0.75;
                  yol+=yükseklik*2;
                  zıplamaSay++;
              }
