@@ -20,5 +20,13 @@ listSehir.add("Münih");
         System.out.println("listSehir = " + listSehir);//listSehir = [Stockholm, Münih, Angara, Münih]
 
 
+        ArrayList<String> listUlke = new ArrayList<>(List.of("Alamanya","Amerigonya","ingiltere","isvec"));
+
+        listSehir.addAll(listUlke);//sehirList'e ulkeList eklendi
+        System.out.println("listSehir = " + listSehir);//ulkeList eklenemiş hali->[Stockholm, Münih, Angara, Münih, Alamanya, Amerigonya, ingiltere, isvec]
+
+        listSehir.removeAll(listUlke);//sehirList'tten ulkeList çıkarıldı
+        System.out.println("listSehir = " + listSehir);//ulkeList çıkarılmış hali->[Stockholm, Münih, Angara, Münih]
+
     }
 }

@@ -3,7 +3,7 @@ package j15_Arrays;
 public class Task16 {
     public static void main(String[] args) {
 
-// task-> sayi arr'daki son elemanlarının print eden code creade ediniz
+// task-> sayi arr'daki son elemanlarının carpinini print eden code creade ediniz
 
         int sayi[][] = {{1, 2, 3}, {9, 8}, {24, 0, 4}};
 

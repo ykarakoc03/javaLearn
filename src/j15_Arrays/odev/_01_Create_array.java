@@ -1,5 +1,8 @@
 package j15_Arrays.odev;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+
 public class _01_Create_array {
 
     public static void main(String[] args) {
@@ -11,7 +14,8 @@ public class _01_Create_array {
          */
 
         //Kodu aşağıya yazınız.
-
+        String meyve[]={"Apple","Orange","Banana","Kiwi"};
+        System.out.println(Arrays.toString(meyve));
 
     }
 }

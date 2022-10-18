@@ -12,8 +12,25 @@ public class Task14 {
          */
         String str = "ade1r4d3";
 
+        String arr[] = str.replaceAll("\\D", "").split("");
+        int topla = 0;
+        for (int i = 0; i < arr.length; i++) {
+            topla += Integer.valueOf(arr[i]);
+        }
+        System.out.println("toplam = " + topla);
 
+        System.out.println("2.yol ");
+    int toplama=0;
+        for (int i = 0; i < str.length(); i++) {
+
+            if (Character.isDigit(str.charAt(i))){
+              toplama+=Integer.parseInt(String.valueOf(str.charAt(i)));
+            }
+        }
+        System.out.println("2.yol sonuc :" + toplama);
     }
+
+
 
 
 }

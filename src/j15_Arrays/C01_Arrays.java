@@ -74,7 +74,7 @@ Array'de primitive datalar veya non-primitive datalarin referanslari store edile
         }
         System.out.println(Arrays.toString(yeniArr));
 
-        //array elemanlarınıbaturel(k->b:ascending b->k:descending, alfabetik)sıralama
+        //array elemanlarını naturel(k->b:ascending b->k:descending, alfabetik)sıralama
         System.out.println(Arrays.toString(isimArr));//sıralama öncesi
         Arrays.sort(isimArr);//isimArr elemanlarını naturel sıralama yapışır
         System.out.println(Arrays.toString(isimArr));//sıralama sonrası, büyük harf önce alır

@@ -13,5 +13,6 @@ public class C06_Set {
         System.out.println(listSehir);//[Münih, LosAngeles, Londra, Angara] listin set edilmiş hali print eder
 
         System.out.println(listSehir.set(11, "pataGonya"));// olmayan indez set edilirse Rte verir
+        //listSehir.set(1,"bursa",2,"izmir");coklu set salismaz
     }
 }

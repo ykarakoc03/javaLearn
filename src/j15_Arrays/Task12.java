@@ -1,5 +1,7 @@
 package j15_Arrays;
 
+import java.util.Arrays;
+
 public class Task12 {
 
     public static void main(String[] args) {
@@ -11,9 +13,12 @@ public class Task12 {
         */
 
         int arr[] = {2, 6, 4, 5, 8, 9};
+        System.out.println("normal dizin :"+ Arrays.toString(arr));
+        for (int i = 0; i < arr.length; i++) {
+            arr[i]*=arr[i];
 
-
-
+        }
+        System.out.println("kareleri alinmis hali :"+Arrays.toString(arr));
     }
 
 }

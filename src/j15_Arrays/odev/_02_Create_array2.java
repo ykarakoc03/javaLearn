@@ -1,5 +1,7 @@
 package j15_Arrays.odev;
 
+import java.util.Arrays;
+
 public class _02_Create_array2 {
 
     public static void main(String[] args) {
@@ -9,7 +11,8 @@ public class _02_Create_array2 {
                 Arrayin elemanlarını yazdırın.
      */
         // Kodu aşağıya yazınız..
-
+int num []={13,15,14,16,16};
+        System.out.println(Arrays.toString(num));
 
     }
 }
