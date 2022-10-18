@@ -18,4 +18,7 @@ public class Task01_Market {
      * 			 for döngüsü ile tüm günleri ortalama kazanç ile karşılaştır
      * 			 ortalama kazançtan aşağıysa o günleri return yap.
      * */
+
+
+
 }

@@ -24,8 +24,8 @@ public class Task10 {
     }
 
     private static int[] isaretDegis(int[] numArr) {
-        for (int i = 0; i < numArr.length; i++) {
-                numArr[i]-=2*numArr[i];
+        for (int i: numArr) {
+                i-=2*i;
         }
         return numArr;
 

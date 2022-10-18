@@ -5,6 +5,8 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Task001 {
+    static List<String> gunler = new ArrayList<>(List.of("Pazartesi", "Sali", "Carsamba", "Persembe", "Cuma", "Cumartesi", "Pazar"));
+    static List<Double> gunlukKazanc = new ArrayList<>();
     public static void main(String[] args) {
         /* TASK :
          * Bir bakkalın 7 günlük tüm kazançlarını günlük olarak gösteren bir program yazınız.
@@ -23,8 +25,7 @@ public class Task001 {
          * 			 for döngüsü ile tüm günleri ortalama kazanç ile karşılaştır
          * 			 ortalama kazançtan aşağıysa o günleri return yap.
          * */
-        List<String> gunler = new ArrayList<>(List.of("Pazartesi", "Sali", "Carsamba", "Persembe", "Cuma", "Cumartesi", "Pazar"));
-        List<Double> gunlukKazanc = new ArrayList<>();
+
         System.out.println("gunluk kazacinizi giriniz :");
         Scanner sc = new Scanner(System.in);
 
@@ -35,36 +36,36 @@ public class Task001 {
             sayac++;
         }
         System.out.println("kazanc listesi :" + gunlukKazanc);
-        System.out.println("haftalik ortalama kazanciniz :" + getOrtalamaKazanc(gunlukKazanc));
-        System.out.println("Ortalamanin Ustunde Kazanc Günleri :" + getOrtalamaninUstundeKazancGünleri(gunlukKazanc, gunler));
-        System.out.println("Ortalamanin Altinda Kazanc Günleri :" + getOrtalamaninAltindaKazancGünleri(gunlukKazanc, gunler));
+        System.out.println("haftalik ortalama kazanciniz :" + getOrtalamaKazanc());
+        System.out.println("Ortalamanin Ustunde Kazanc Günleri :" + getOrtalamaninUstundeKazancGünleri());
+        System.out.println("Ortalamanin Altinda Kazanc Günleri :" + getOrtalamaninAltindaKazancGünleri());
 
     }
-
-    private static String getOrtalamaninUstundeKazancGünleri(List<Double> gunlukKazanc, List<String> gunler) {
-        String gun = "";
-        for (int i = 0; i < 7; i++) {
-            if (gunlukKazanc.get(i) > getOrtalamaKazanc(gunlukKazanc)) {
-                gun += gunler.get(i) + " ";
-            }
-        }
-        return gun;
-    }
-
-    private static String getOrtalamaninAltindaKazancGünleri(List<Double> gunlukKazanc, List<String> gunler) {
-        String gun = "";
-        for (int i = 0; i < 7; i++) {
-            if (gunlukKazanc.get(i) < getOrtalamaKazanc(gunlukKazanc)) {
-                gun += gunler.get(i) + " ";
-            }
-        }
-        return gun;
-    }
-    private static double getOrtalamaKazanc(List<Double> gunlukKazanc) {
+    private static double getOrtalamaKazanc() {
         double toplam = 0;
         for (double i : gunlukKazanc) {
             toplam += i;
         }
         return toplam / 7;
     }
+    private static String getOrtalamaninUstundeKazancGünleri() {
+        String gun = "";
+        for (int i = 0; i < 7; i++) {
+            if (gunlukKazanc.get(i) > getOrtalamaKazanc()) {
+                gun += gunler.get(i) + " ";
+            }
+        }
+        return gun;
+    }
+
+    private static String getOrtalamaninAltindaKazancGünleri() {
+        String gun = "";
+        for (int i = 0; i < 7; i++) {
+            if (gunlukKazanc.get(i) < getOrtalamaKazanc()) {
+                gun += gunler.get(i) + " ";
+            }
+        }
+        return gun;
+    }
+
 }

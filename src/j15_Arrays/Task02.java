@@ -20,5 +20,10 @@ public class Task02 {
             toplam += sayiArr[i];
         }
         System.out.println("Toplam "+toplam);
+
+
+        //for (int i:sayiArr ) {
+        //    toplam+=i;
+        //}
     }
 }
