@@ -1,4 +1,4 @@
-package j16_ArrayList.Tasks;
+package j16_ArrayList.Task;
 
 import java.util.ArrayList;
 
