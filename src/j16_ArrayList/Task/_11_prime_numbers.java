@@ -1,4 +1,8 @@
-package j16_ArrayList.Tasks;
+package j16_ArrayList.Task;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
 
 public class _11_prime_numbers {
 
@@ -16,6 +20,23 @@ public class _11_prime_numbers {
      */
 
     public static void main(String[] args) {
+        List<Integer> asal = new ArrayList<>();
+        Scanner input = new Scanner(System.in);
+        System.out.println("Pozitif tam sayı giriniz");
+        int num1 = input.nextInt();
+        int count = 0;
+        for (int i = 2; i < num1; i++) {
+            for (int j = i + 1; j < num1; j++) {
+                if (i % j != 0) {
+                    asal.add(i);
+                    count++;
+                }
+            }
 
+        }
+        System.out.println(num1+ " sayısına kadr "+count+" asla sayı var :"+asal);
     }
+
+
 }
+
