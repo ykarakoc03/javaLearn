@@ -1,7 +1,8 @@
-package j16_ArrayList.Tasks;
+package j16_ArrayList.Task;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class _06_arraylist6 {
 
@@ -17,6 +18,10 @@ public class _06_arraylist6 {
      */
 
     public static void main(String[] args) {
+
+        ArrayList<Integer> liste = new ArrayList<>(List.of(5,4,6,2,1));
+
+
 
 
     }

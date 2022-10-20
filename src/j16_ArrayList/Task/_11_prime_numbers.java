@@ -24,19 +24,30 @@ public class _11_prime_numbers {
         Scanner input = new Scanner(System.in);
         System.out.println("Pozitif tam sayı giriniz");
         int num1 = input.nextInt();
-        int count = 0;
-        for (int i = 2; i < num1; i++) {
-            for (int j = i + 1; j < num1; j++) {
-                if (i % j != 0) {
-                    asal.add(i);
-                    count++;
-                }
+        for (int k = 2; k < num1; k++) {
+            if (asalKontrol(k)) {
+                asal.add(k);
             }
-
         }
-        System.out.println(num1+ " sayısına kadr "+count+" asla sayı var :"+asal);
+        System.out.println(num1 + " sayısına kadr " + asal.size() + " asla sayı var :" + asal);
+    }
+
+
+    public static boolean asalKontrol(int k) {
+        boolean asalMı = true;
+        for (int i = 2; i < k; i++) {
+            if (k % i == 0) {
+                asalMı = false;
+                break;
+            }
+        }
+        if (asalMı & k != 1) {
+            return true;
+        } else return false;
+
     }
 
 
 }
+
 
