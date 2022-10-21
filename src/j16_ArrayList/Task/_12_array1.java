@@ -1,4 +1,4 @@
-package j16_ArrayList.Tasks;
+package j16_ArrayList.Task;
 
 public class _12_array1 {
 

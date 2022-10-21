@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class _11_prime_numbers {
+public class _11_prime_numbers_v2 {
 
     /*
     negatif olmayan bir n sayısı girin ve bu sayıya kadar olan kaç asal sayı var ise yazdırın.
@@ -25,27 +25,24 @@ public class _11_prime_numbers {
         System.out.println("Pozitif tam sayı giriniz");
         int num1 = input.nextInt();
         for (int k = 2; k < num1; k++) {
-            if (asalKontrol(k)) {
+            boolean asalMı = true;
+            for (int i = 2; i < k; i++) {
+                if (k % i == 0) {
+                    asalMı = false;
+                    break;
+                }
+            }
+            if (asalMı) {
                 asal.add(k);
             }
+
         }
         System.out.println(num1 + " sayısına kadr " + asal.size() + " asla sayı var :" + asal);
     }
 
 
-    public static boolean asalKontrol(int k) {
-        boolean asalMı = true;
-        for (int i = 2; i < k; i++) {
-            if (k % i == 0) {
-                asalMı = false;
-                break;
-            }
-        }
-        if (asalMı) {
-            return true;
-        } else return false;
 
-    }
+
 
 
 }
