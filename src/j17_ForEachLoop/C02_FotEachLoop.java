@@ -1,4 +1,4 @@
-package J17_ForEachLoop;
+package j17_ForEachLoop;
 
 public class C02_FotEachLoop {
     public static void main(String[] args) {

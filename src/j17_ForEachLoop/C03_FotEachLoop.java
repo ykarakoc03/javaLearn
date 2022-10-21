@@ -1,4 +1,4 @@
-package J17_ForEachLoop;
+package j17_ForEachLoop;
 
 import java.util.ArrayList;
 import java.util.List;
