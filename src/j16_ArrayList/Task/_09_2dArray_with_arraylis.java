@@ -1,4 +1,4 @@
-package j16_ArrayList.Tasks;
+package j16_ArrayList.Task;
 
 import java.util.ArrayList;
 
@@ -19,7 +19,13 @@ public class _09_2dArray_with_arraylis {
      */
 
     public static void main(String[] args) {
-
-
+        ArrayList<Integer> list=new ArrayList<>();
+int arr [][]={{1,2,3},{4,5,6},{7,8,9}};
+        for (int[] parca: arr) {
+            for (int birim: parca){
+                list.add(birim);
+            }
+        }
+        System.out.println("list = " + list);
     }
 }

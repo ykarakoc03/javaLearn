@@ -9,6 +9,21 @@ public class Task13 {
      * ardışık array elemanların toplamını hesaplayan bir method create ediniz.
      */
     public static void main(String[] args) {
+        int arr[] = {3, 5, 1, 2, 7, 9, 2, 3, 5, 7};
+
+        for (int i = 0; i < arr.length; i++) {
+            int topla = 0;
+            String str = "";
+
+            for (int j = i; j <=i; j++) {
+                topla += arr[i];
+                str += "+" + arr[j];
+            }
+
+            System.out.println(str+" "+topla);
+
+        }
+
 
 
     }

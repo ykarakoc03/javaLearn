@@ -1,7 +1,8 @@
-package j16_ArrayList.Tasks;
+package j16_ArrayList.Task;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 public class _07_arraylist7 {
 
@@ -22,7 +23,19 @@ public class _07_arraylist7 {
      */
 
     public static void main(String[] args) {
+        ArrayList<Integer> list1 = new ArrayList<>(List.of(8, 7, 9, 6, 7));
+        ArrayList<Integer> list2 = new ArrayList<>(List.of(6, 7, 12, 3, 1));
+        System.out.println(common_values(list1, list2));
+    }
 
+    private static ArrayList<Integer> common_values(ArrayList<Integer> list1, ArrayList<Integer> list2) {
+        ArrayList<Integer> ortakList = new ArrayList<>();
+        for (int i : list1) {
+            for (int j : list2) {
+                if (i == j && !ortakList.contains(i)) ortakList.add(i);
+            }
+        }
 
+        return ortakList;
     }
 }
