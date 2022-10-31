@@ -2,12 +2,21 @@ package j22_DateTime.Haftanin_Sorusu;
 
 import java.time.LocalDateTime;
 
-public class Kullanici {
-    String name;// objede deger alacak inst.
-    LocalDateTime kayitZamani;// objede deger alacak
+//task 1. stepp
+public class Kullanici {//kullanıcı obj uretecek kalıphane class -> main olmaz
 
-    public Kullanici(String name, LocalDateTime kayitZamani) {
+    String name;//obj de değer alacak inst. var.
+    LocalDateTime kayıtZamanı;//obj de değer alacak inst. var.
+
+    public Kullanici(String name, LocalDateTime kayıtZamanı) {//full p'li teleskopik cons.
         this.name = name;
-        this.kayitZamani = kayitZamani;
+        this.kayıtZamanı = kayıtZamanı;
+    }
+
+    @Override
+    public String toString() {//bu class'dan olusturulan obj print etmek için obj datalarını string'e cevirir
+        return
+                "name='" + name + '\'' +
+                        ", kayıtZamanı=" + kayıtZamanı;
     }
 }
