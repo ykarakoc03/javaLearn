@@ -39,10 +39,9 @@ public class C01_AccessModifier {
         System.out.println("private method'dan agaya selam");
     }
     protected void protectedMethod(){
+        // public void protectedMethod(){
         System.out.println("protected method'dan agaya selam");
 
     }
-    C01_AccessModifier obj3=new C01_AccessModifier();//private cons call edilid aynı class
-
-
+    // C01_AccessModifier obj3=new C01_AccessModifier();//private cons call edilid aynı class
 }
