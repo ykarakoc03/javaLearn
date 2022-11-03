@@ -36,7 +36,7 @@ gradle-app.setting
 ## IntelliJ
 ##############################
 out/
-src/j00_Exercise
+src/j99_Exercise
 .idea/
 .idea_modules/
 *.iml
