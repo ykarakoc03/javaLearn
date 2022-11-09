@@ -31,6 +31,11 @@ Class'inin parent class Hz.Adem
         FileInputStream fis = new FileInputStream("C:\\Users\\Nutzer\\IdeaProjects\\javaLearn\\src\\j29_Exceptions\\ebikGabik");
         //ilgili dosyaya ulasmak icin fis obj tanimlandi parametre olarak ulasilacak dosya yolu girildi
         // FileNotFountException-> adres yanlis controlu
+        /*
+        Eger bir nethod'da Checked  (CTE riski olan excep.) exception varsa method signature (method nameden sonraki bolum) hata uyarisi adi altinda
+        kirmizi cizgi veriri. komutun derlemesine izin vermez ve code uzerine geldiginzde Add... exception handle etme tavsiyesi edilir otomatic excep eklenir
+        Bu şekilde methodu call eden komutlat try-catch alınması garanti edilmiş olur.
+         */
         int k;
         while ((k = fis.read()) != -1) {
             System.out.print((char) k);// k int ascci olan file degeri char icin casting-> type donusumu yapildi
