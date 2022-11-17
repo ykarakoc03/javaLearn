@@ -12,6 +12,9 @@ public class Main {
         arac.add(teslaCar);
         arac.add(toyotaPrius);
         arac.add(bus);
+        System.out.println("     ******    ");
+        System.out.println(teslaCar.getClass().getSimpleName());// class ismini obje ile getiriyor
+        System.out.println("     ******    ");
 
         for (Vehicle str:arac) {
 
