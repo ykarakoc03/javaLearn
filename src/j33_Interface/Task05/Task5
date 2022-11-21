@@ -1,0 +1,25 @@
+/*
+   Şirketimize PcMuhendis alımı yapılacaktır. bunun için adayların bilgilerini gireceği bir program create ediniz.
+   adayda bakılacak özellikler şöyle olmalıdır:
+   -askerlik durumu(askerlik yapıp yapmadığını kontrol ediniz.)
+   -mezuniyet ortalaması(double derece)
+   -adli sicil(adli sicil kaydı olup olmadığını kontrol ediniz.)
+   -iş tecrubesi(çalıştığı firmaları atacağı bir list oluşturunuz.)
+   1-ilk olarak bir IMmuhendis adında interface class oluşturup yukarda bakılacak olan durumlar için method create ediniz.
+   2-metdoların içini doldurmak için  PCMuhendis adında concrete bir class create ediniz.
+   PCMuhendis classının fields ları->boolean askerlik ve boolean adliSicil
+   3-ICalışma adında bir interface olusturum. içerisinde calıs() methodu create ediniz.
+   4-Makine mühendiisi class'ı olusturun.IMuhendis ve ICalışma interface'sinden methodları implement edin.
+   referansGetir() isminde array döndüren method create ediniz.
+   5-Son olarak main class oluşturup obje create ediniz ve  objelerle methoddları call ederek çıktıları consolda yazdırınız.
+  */
+ /*
+ output:
+ Askerliğimi yapmadım.
+ Herhangi bir adli sicil kaydım bulunmuyor.
+ Ortalamam: 3.07
+ Bilgisayar Mühendisi Olarak Şu Şirketlerde Çalıştım...
+ Vestel
+ Havelsan
+ Türksat
+  */

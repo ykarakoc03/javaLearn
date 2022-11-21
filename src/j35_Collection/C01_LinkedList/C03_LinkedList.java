@@ -37,5 +37,11 @@ public class C03_LinkedList {
         System.out.println("ll2.getFirst() = " + ll2.getFirst());//ll2.getFirst() = JavaCAN
         System.out.println("ll3.getLast() = " + ll3.getLast());//ll3.getLast() = Hasmayan
 
+
+
+
+
+
+
     }
 }
