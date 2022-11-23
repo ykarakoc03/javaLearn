@@ -1,7 +1,6 @@
 package j36_Map;
 
-import java.util.HashMap;
-import java.util.Scanner;
+import java.util.*;
 
 public class Task04 {
 
@@ -23,9 +22,25 @@ public class Task04 {
      * */
 
 
-
     public static void main(String[] args) {
 
+        HashMap<String, Integer> say = new HashMap<>();
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("bir metin giriniz: ");
+        String text = scanner.nextLine();
+        String[] cümle = text.split("\\.");
+        System.out.println(Arrays.toString(cümle));
+        for (String str : cümle) {
+            ArrayList<String> kelime = new ArrayList<>(Arrays.asList(str.trim().split(" ")));
+            for (String klm : kelime) {
+                if (say.containsKey(klm)) say.put(klm, say.get(klm) + 1);
+                else say.put(klm, 1);
+            }
+        }
+        System.out.println(say);
+
+
     }
+
 
 }
