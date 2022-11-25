@@ -17,7 +17,6 @@ public class HelloWorld {
          */
 //imleçin oldugu satır ctrl+d cmd+d ile alt satıra kopyalanır
 
-
         /*
      TRICK -> javada code satırı cümle(statement) sonuna mutlaka  ; koyulmalı
      code satırında kırmızı alt çizgi uyarısı "compile time error" CTE hatası uyarısı demektir.
