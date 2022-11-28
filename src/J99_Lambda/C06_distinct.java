@@ -65,7 +65,8 @@ listElemanCiftkarekterSayisiKAreliTersSirali(menu);
                 forEach(t -> System.out.print(t + " "));
     }
 
-    // Task : listin elemanlarin karakterlerinin cift sayili  karelerini hesaplayan,ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
+    // Task : listin elemanlarin karakterlerinin cift sayili  karelerini hesaplayan,
+    // ve karelerini tekrarsiz buyukten kucuge sirali  print ediniz...
     public static void listElemanCiftkarekterSayisiKAreliTersSirali(List<String> menu) {
         menu.stream().
                 map(String::length).
