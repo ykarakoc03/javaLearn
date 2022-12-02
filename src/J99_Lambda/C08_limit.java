@@ -21,7 +21,7 @@ karakterSayısıEnBüyükOlan(menu);
         Stream<String> enBüyükKarekter= menu.
                 stream().
                 sorted(Comparator.comparing(String::length).reversed()).
-                limit(1);//akıştaki ilk 1 elemanı alındı, ilk ünü deseydi 3 yazacaktık
+                limit(1);//akıştaki ilk 1 elemanı alındı, ilk 3'ünü deseydi 3 yazacaktık
         System.out.println(enBüyükKarekter);//böyle referans degerini yazdırır
         //enBüyükKarekter.toArray()->arraya cevrildi    //alış olduğu için toString de olmaz, #birden çok elemanları# list,array,Queue..vs atanmalı
 
