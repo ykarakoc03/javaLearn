@@ -19,8 +19,15 @@ public class C11_stream_iterator {
         System.out.println("Task 05 ikini ilk x kuvveti ");
     ikininilkXkuvveti(7);
         System.out.println("   ***   **  ***     ");
+        System.out.println("task 06 istenen sayını ilk x kuvveti");
+                sayınınilkXkuvveti(2,3);
+        System.out.println();
+        System.out.println("task 07 faktörüyel(4) = " + faktörüyel(4));
         System.out.println("task08 -- > : "+istenenSayiXKuvvet(7, 5));
         System.out.println("task08 -- > : "+istenenSayiXKuvvet(3, 5));//243
+
+
+
     }//mailsonu
 
     //TASK 01 --> Structured Programming ve Functional Programming ile 1'den x'e kadar tamsayilari toplayan bir program create ediniz.
@@ -47,7 +54,7 @@ public class C11_stream_iterator {
     public static int toplamCiftayi(int x) {
         return IntStream.//manual akıs tanımlandı
                 // range(1,x+1).//1 dahil x+1 hariç-> 1,2,3...x int sayılarından aralık tanımlandı
-                        rangeClosed(1, x).//1 dahil x+1 hariç-> 1,2,3...x int sayılarından aralık tanımlandı
+                        rangeClosed(1, x).//1 dahil x dahil-> 1,2,3...x int sayılarından aralık tanımlandı
                         filter(C01_LambdaExpression::ciftMi).//akısdaki tamsayıların çift olanları akısa alındı
                         sum();//akısa giren 1,2,3...x tam sayıları toplandı
         //rangeClosed(startInclusive,endInclusive);-> 1'lik artımlı bir adımla startInclusive'den (dahil) endInclusive'e (dahil) kadar  sıralı bir IntStream return eder.
@@ -79,9 +86,19 @@ public class C11_stream_iterator {
                limit(x).
                forEach(t-> System.out.print(t+ " "));
     }
+
+
 //TASK 06 --> Istenilen bir sayinin ilk x kuvvetini ekrana yazdiran programi  create ediniz.
+public static void sayınınilkXkuvveti(int istenenSayi, int x) {
+        IntStream.iterate(istenenSayi,t->t*istenenSayi).limit(x).forEach(t-> System.out.print(t+" "));
+
+}
 
 //TASK 07 --> Istenilen bir sayinin faktoriyelini hesaplayan programi  create ediniz.
+public static OptionalInt faktörüyel(int x) {
+   return IntStream.rangeClosed(1,x).reduce((t,u)->t*u);
+
+}
 
 //TASK 08 --> Istenilen bir sayinin  x. kuvvetini ekrana yazdiran programi  create ediniz.
 public static OptionalInt istenenSayiXKuvvet(int istenenSayi, int x){

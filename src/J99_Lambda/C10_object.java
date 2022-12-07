@@ -37,7 +37,10 @@ C10_Universite u05=new C10_Universite("Yıldız Teknik","Gemi",261,55);
         System.out.println("Task07 "+notOrt63BüyükOgrnSysToplam(unv));
         System.out.println("  ** ** ** ** ** **");
         System.out.println("Task08 "+ogrnSayısı333denBüyükNotOrt(unv));
-
+        System.out.println("  ** ** ** ** ** **");
+        System.out.println("Task09 "+matematikBölümSay(unv));
+        System.out.println("  ** ** ** ** ** **");
+        System.out.println("Task10 "+ogrn571fazlaEnBüyükNotOrt(unv));
 
 
     }//main sonu
@@ -121,9 +124,21 @@ public static List<C10_Universite> ogrnSysTersSırala(List<C10_Universite> unv) 
 
     }
 //task 09-->"matematik" bolumlerinin sayisini  print ediniz.
-//task 10-->Ogrenci sayilari 571'dan fazla olan universite'lerin en buyuk notOrt'unu bulunuz.
-    //task 11-->Ogrenci sayilari 1071'dan az olan universite'lerin en kucuk notOrt'unu bulunuz.
+public static int matematikBölümSay(List<C10_Universite> unv) {
+        return (int) unv.stream().filter(t->t.getBolum().equals("Matematik")).count();
 
+}
+//task 10-->Ogrenci sayilari 571'dan fazla olan universite'lerin en buyuk notOrt'unu bulunuz.
+    public static Optional<Integer> ogrn571fazlaEnBüyükNotOrt(List<C10_Universite> unv) {
+       return unv.stream().filter(t -> t.getOgrcSayisi() > 571).map(t -> t.getNotOrt()).reduce(Math::max);
+
+    }
+
+    //task 11-->Ogrenci sayilari 1071'dan az olan universite'lerin en kucuk notOrt'unu bulunuz.
+    public static Optional<Integer> ogrn1071szEnKüçükNotOrt(List<C10_Universite> unv) {
+        return unv.stream().filter(t -> t.getOgrcSayisi() < 1071).map(t -> t.getNotOrt()).reduce(Math::min);
+
+    }
 
 
 
