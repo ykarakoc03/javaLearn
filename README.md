@@ -1,5 +1,5 @@
 # javaLearn
-##java 11 kullanılmıştır.
+## java 11 kullanılmıştır.
 
 "Hello World" den başlayıp Tüm OOP konseptini içerir
 <br>
